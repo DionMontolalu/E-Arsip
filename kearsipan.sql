@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04 Jul 2017 pada 09.03
+-- Generation Time: 13 Mei 2019 pada 06.37
 -- Versi Server: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -39,7 +39,8 @@ CREATE TABLE `koderak` (
 
 INSERT INTO `koderak` (`id_rak`, `id_terdakwa`, `koderak`, `tgl_perkara`) VALUES
 (1, 2, '12co2', '2017-06-14'),
-(2, 3, '12sa3', '2017-06-23');
+(2, 3, '12sa3', '2017-06-23'),
+(3, 4, '12ca4', '2017-07-13');
 
 -- --------------------------------------------------------
 
@@ -61,7 +62,8 @@ CREATE TABLE `saksi` (
 INSERT INTO `saksi` (`id_saksi`, `id_terdakwa`, `saksi_saksi`, `tgl_input`) VALUES
 (1, 1, 'Sample saksi', '2017-06-14'),
 (2, 2, 'Saksi sample', '2017-06-14'),
-(3, 3, 'saksi 1 ddsds\r\nsaksi 2 cece', '2017-06-23');
+(3, 3, 'saksi 1 ddsds\r\nsaksi 2 cece', '2017-06-23'),
+(4, 4, '1. Aldo Tangerang\r\n2. Wonas Pasaribu\r\n3. Polut Sitampar', '2017-07-13');
 
 -- --------------------------------------------------------
 
@@ -96,7 +98,8 @@ CREATE TABLE `terdakwa` (
 INSERT INTO `terdakwa` (`id_terdakwa`, `noper`, `noput`, `nama`, `umur`, `tempat`, `ttl`, `jk`, `kebangsaan`, `tempating`, `agama`, `pekerjaan`, `u_pn`, `u_pt`, `u_ma`, `u_puter`, `tgl_insert`) VALUES
 (1, '101ptn22', '102ptn33', 'Contoh data', '21', 'Ranoyapo', '06 Februari 1996', 'Laki-laki', 'Indoneisa', 'Sasaaran', 'Kristen', 'Petani', 'KIsi-kisi -KKPI-1.pdf', 'KIsi-kisi -KKPI-1.pdf', 'KIsi-kisi -KKPI-1.pdf', '', '2017-06-14'),
 (2, '101ptn22', '102ptn33', 'Contoh data', '21', 'Ranoyapo', '06 Februari 1996', 'Laki-laki', 'Indoneisa', 'Sasaaran', 'Kristen Katolik', 'Petani', 'http://localhost/e-arsip/', 'https://www.w3schools.com/php/filter_validate_url.asp', 'https://www.w3schools.com/php/php_form_url_email.asp', 'http://localhost/e-arsip/admin/edit_arsip.php', '2017-06-14'),
-(3, '1022ptb', '1033ptn', 'Sample Human', '22', 'Papakelan', '07 Februari 2017', 'Laki-laki', 'Indonesia', 'Papakelan', 'Kristen Katolik', 'Petani', 'https://www.w3schools.com/php/filter_validate_url.asp', 'https://www.w3schools.com/php/php_form_url_email.asp', 'http://localhost/e-arsip/', 'https://www.w3schools.com/php/php_form_url_email.asp', '2017-06-23');
+(3, '1022ptb', '1033ptn', 'Sample Human', '22', 'Papakelan', '07 Februari 2017', 'Laki-laki', 'Indonesia', 'Papakelan', 'Kristen Katolik', 'Petani', 'https://www.w3schools.com/php/filter_validate_url.asp', 'https://www.w3schools.com/php/php_form_url_email.asp', 'http://localhost/e-arsip/', 'https://www.w3schools.com/php/php_form_url_email.asp', '2017-06-23'),
+(4, '1044ptb', '1043ptn', 'Canon Pixma', '33', 'Selayar', '08 Januari 1996', 'Laki-laki', 'Indonesia', 'Selayar Panjang', 'Kristen', 'Petani', 'S1 RPP PBO .pdf', 'S1 RPP PBO .pdf', 'S1 RPP PBO .pdf', 'S1 RPP PBO .pdf', '2017-07-13');
 
 -- --------------------------------------------------------
 
@@ -155,17 +158,17 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `koderak`
 --
 ALTER TABLE `koderak`
-  MODIFY `id_rak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_rak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `saksi`
 --
 ALTER TABLE `saksi`
-  MODIFY `id_saksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_saksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `terdakwa`
 --
 ALTER TABLE `terdakwa`
-  MODIFY `id_terdakwa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_terdakwa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `user`
 --
